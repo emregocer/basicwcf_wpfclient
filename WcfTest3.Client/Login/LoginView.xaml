@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="WcfTest3.Client.Login.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WcfTest3.Client.Login"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="22,24,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="22,62,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="182,24,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+
+    </Grid>
+</UserControl>

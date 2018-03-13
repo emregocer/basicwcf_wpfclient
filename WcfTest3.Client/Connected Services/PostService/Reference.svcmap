@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5838c108-9490-42a3-86ac-3777a52e5d5f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://desktop-578oabe:4321/WcfTest3Host/PostService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PostService.xsd" MetadataType="Schema" ID="8415e9e5-e82f-4907-984e-fea36bbfa921" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/PostService?xsd=xsd1" />
+    <MetadataFile FileName="PostService.wsdl" MetadataType="Wsdl" ID="f583ee9d-8206-4565-8f63-26f787c81598" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/PostService?wsdl" />
+    <MetadataFile FileName="PostService.disco" MetadataType="Disco" ID="9843d5b8-3c8d-4ada-b123-9f37965f6bbb" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/PostService?disco" />
+    <MetadataFile FileName="PostService1.xsd" MetadataType="Schema" ID="4d04bbbb-35b4-41ee-bdea-5d734f7ca2f3" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/PostService?xsd=xsd2" />
+    <MetadataFile FileName="PostService2.xsd" MetadataType="Schema" ID="1d1b5a8c-b294-405f-93b2-af8e9b57c854" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/PostService?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

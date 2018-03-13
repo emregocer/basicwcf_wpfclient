@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0ecc1147-5e1d-4bab-9fc0-d09178a29b35" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://desktop-578oabe:4321/WcfTest3Host/CommentService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommentService.xsd" MetadataType="Schema" ID="171bc534-d553-4674-ac81-79d80778c9aa" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/CommentService?xsd=xsd1" />
+    <MetadataFile FileName="CommentService.disco" MetadataType="Disco" ID="72031db2-c5ec-44a0-a9df-b9817adcca86" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/CommentService?disco" />
+    <MetadataFile FileName="CommentService.wsdl" MetadataType="Wsdl" ID="bda13393-0e0c-44dc-b24c-475e74e3101d" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/CommentService?wsdl" />
+    <MetadataFile FileName="CommentService1.xsd" MetadataType="Schema" ID="633488c1-3e6a-46cf-85bf-a649ae55e7c9" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/CommentService?xsd=xsd2" />
+    <MetadataFile FileName="CommentService2.xsd" MetadataType="Schema" ID="312dd321-a607-4e79-acc5-0a7f6a1c635e" SourceId="1" SourceUrl="https://desktop-578oabe:4321/WcfTest3Host/CommentService?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

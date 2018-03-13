@@ -1,0 +1,36 @@
+﻿<Window x:Class="WcfTest3.Client.ApplicationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WcfTest3.Client"
+        mc:Ignorable="d"
+        Title="AppView" Height="600" Width="800"
+        DataContext="{Binding AppViewModel, Source={StaticResource ViewModelLocator}}">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type local:HomeViewModel}">
+            <local:HomeView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:PanelViewModel}">
+            <local:PanelView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:CategoryViewModel}">
+            <local:CategoryView />
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <Border DockPanel.Dock="Left" BorderBrush="Black" BorderThickness="0,0,1,0">
+            <ItemsControl ItemsSource="{Binding PageViewModels}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding Name}"
+                                Command="{Binding DataContext.ChangePageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                CommandParameter="{Binding}"
+                                Margin="2,5"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Border>
+        <ContentControl Content="{Binding CurrentPageViewModel}" />
+    </DockPanel>
+</Window>
