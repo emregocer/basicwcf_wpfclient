@@ -26,7 +26,12 @@ namespace WcfTest3.DataAccess
             _dbSet.Remove(Entity);
         }
 
-        public IQueryable<T> Get(Expression<Func<T, bool>> predicate)
+        public T GetFirst(Expression<Func<T, bool>> predicate)
+        {
+            return _dbSet.SingleOrDefault(predicate);
+        }
+
+        public IEnumerable<T> Get(Expression<Func<T, bool>> predicate)
         {
             return _dbSet.Where(predicate);
         }
@@ -36,7 +41,7 @@ namespace WcfTest3.DataAccess
             return _dbSet.SingleOrDefault(t => t.Id == Id);
         }
 
-        public IList<T> GetAll()
+        public IEnumerable<T> GetAll()
         {
             return _dbSet.ToList();
         }
@@ -46,24 +51,18 @@ namespace WcfTest3.DataAccess
             return _dbSet.Add(Entity);
         }
 
+        // Do I need update method on repository?
         public void Update(T Entity)
         {
-            var entity = _dbSet.SingleOrDefault(t => t.Id == Entity.Id);
-            if (entity == null)
-            {
-                return;
-            }
-            _context.Entry(Entity).CurrentValues.SetValues(entity);
+            _dbSet.Attach(Entity);
+            var entry = _context.Entry(Entity);
+            entry.State = EntityState.Modified;
         }
 
+        // I wouldnt need this if i used unit of work.
         public void SaveChanges()
         {
             _context.SaveChanges();
-        }
-
-        public T GetFirst(Expression<Func<T, bool>> predicate)
-        {
-            return _dbSet.SingleOrDefault(predicate);
-        }
+        }      
     }
 }

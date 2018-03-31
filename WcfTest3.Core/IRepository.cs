@@ -12,11 +12,10 @@ namespace WcfTest3.Core
         T Insert(T Entity);
         void Delete(T Entity);
         void Update(T Entity);
-        IList<T> GetAll();
-        IQueryable<T> Get(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> GetAll();
+        IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
         T GetSingle(int Id);
         T GetFirst(Expression<Func<T, bool>> predicate);
-
         void SaveChanges();
     }
 }
